@@ -1,0 +1,515 @@
+[
+  {
+    "name": "Pufferfish",
+    "location": ["Ocean", "Ginger Island"],
+    "time": "12pm – 4pm",
+    "season": ["Summer"],
+    "weather": "Sunny"
+  },
+  {
+    "name": "Anchovy",
+    "location": ["Ocean"],
+    "time": "Any",
+    "season": ["Spring", "Fall"],
+    "weather": "Any"
+  },
+  {
+    "name": "Tuna",
+    "location": ["Ocean", "Ginger Island"],
+    "time": "6am – 7pm",
+    "season": ["Summer", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Sardine",
+    "location": ["Ocean"],
+    "time": "6am – 7pm",
+    "season": ["Spring", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Bream",
+    "location": ["River"],
+    "time": "6pm – 2am",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Largemouth Bass",
+    "location": ["Mountain Lake", "Wilderness Farm"],
+    "time": "6am – 7pm",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Smallmouth Bass",
+    "location": ["Town River", "Forest Pond"],
+    "time": "Any",
+    "season": ["Spring", "Fall"],
+    "weather": "Any"
+  },
+  {
+    "name": "Rainbow Trout",
+    "location": ["River", "Mountain Lake"],
+    "time": "6am – 7pm",
+    "season": ["Summer"],
+    "weather": "Sunny"
+  },
+  {
+    "name": "Salmon",
+    "location": ["River", "Waterfalls"],
+    "time": "6am – 7pm",
+    "season": ["Fall"],
+    "weather": "Any"
+  },
+  {
+    "name": "Walleye",
+    "location": ["River", "Mountain Lake", "Forest Pond", "Forest Farm Pond"],
+    "time": "12pm – 2am",
+    "season": ["Fall", "Winter"],
+    "weather": "rain"
+  },
+  {
+    "name": "Sea Jelly",
+    "location": ["Crabpot"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Goby",
+    "location": ["Cindersap Forest Waterfalls"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Perch",
+    "location": ["River", "Mountain Lake", "Forest Pond"],
+    "time": "Any",
+    "season": ["Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Carp",
+    "location": [
+      "Mountain Lake",
+      "Secret Woods",
+      "The Sewers",
+      "Mutant Bug Lair"
+    ],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall"],
+    "weather": "Any"
+  },
+  {
+    "name": "Catfish",
+    "location": ["River", "Secret Woods", "Witch's Swamp"],
+    "time": "6am - 12am",
+    "season": ["Spring", "Fall"],
+    "weather": "rain"
+  },
+  {
+    "name": "Pike",
+    "location": ["River", "Forest Pond"],
+    "time": "Any",
+    "season": ["Summer", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Sunfish",
+    "location": ["River"],
+    "time": "6am – 7pm",
+    "season": ["Spring", "Summer"],
+    "weather": "Sunny, Windy"
+  },
+  {
+    "name": "Red Mullet",
+    "location": ["Ocean"],
+    "time": "6am – 7pm",
+    "season": ["Summer", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Herring",
+    "location": ["Ocean"],
+    "time": "Any",
+    "season": ["Spring", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Eel",
+    "location": ["Ocean"],
+    "time": "4pm – 2am",
+    "season": ["Spring", "Fall"],
+    "weather": "rain"
+  },
+  {
+    "name": "Octopus",
+    "location": ["Ocean", "Ginger Island", "Night Market"],
+    "time": "6am – 1pm",
+    "season": ["Summer", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Red Snapper",
+    "location": ["Ocean", "Beach Farm"],
+    "time": "6am – 7pm",
+    "season": ["Summer", "Fall", "Winter"],
+    "weather": "rain"
+  },
+  {
+    "name": "Squid",
+    "location": ["Ocean"],
+    "time": "6pm – 2am",
+    "season": ["Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Seaweed",
+    "location": ["Crabpot"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Green Algae",
+    "location": ["Crabpot"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Sea Cucumber",
+    "location": ["Ocean", "Night Market"],
+    "time": "6am – 7pm",
+    "season": ["Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Super Cucumber",
+    "location": ["Ocean", "Ginger Island", "Night Market"],
+    "time": "6pm – 2am",
+    "season": ["Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Ghostfish",
+    "location": ["The Mines"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "White Algae",
+    "location": ["The Mines", "The Sewers", "Mutant Bug Lair", "Witch's Swamp"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Stonefish",
+    "location": ["The Mines Floor 20"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Crimsonfish",
+    "location": ["Ocean"],
+    "time": "Any",
+    "season": ["Summer"],
+    "weather": "Any"
+  },
+  {
+    "name": "Angler",
+    "location": ["Pelican Town"],
+    "time": "Any",
+    "season": ["Fall"],
+    "weather": "Any"
+  },
+  {
+    "name": "Ice Pip",
+    "location": ["The Mines Floor 60"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Lava Eel",
+    "location": ["The Mines Floor 100", "Volcano Caldera"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Legend",
+    "location": ["Mountain Lake"],
+    "time": "Any",
+    "season": ["Spring"],
+    "weather": "rain"
+  },
+  {
+    "name": "Sandfish",
+    "location": ["The Desert"],
+    "time": "6am – 8pm",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Scorpion Carp",
+    "location": ["The Desert"],
+    "time": "6am – 8pm",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Flounder",
+    "location": ["Ocean", "Ginger Island"],
+    "time": "6am – 8pm",
+    "season": ["Spring", "Summer"],
+    "weather": "Any"
+  },
+  {
+    "name": "Midnight Carp",
+    "location": [
+      "Mountain Lake",
+      "Forest Pond",
+      "Ginger Island North & West (freshwater)"
+    ],
+    "time": "10pm – 2am",
+    "season": ["Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Clam",
+    "location": ["Crabpot"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Mutant Carp",
+    "location": ["The Sewers"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Sturgeon",
+    "location": ["Mountain Lake"],
+    "time": "6am – 7pm",
+    "season": ["Summer", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Tiger Trout",
+    "location": ["River"],
+    "time": "6am – 7pm",
+    "season": ["Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Bullhead",
+    "location": ["Mountain Lake"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Tilapia",
+    "location": ["Ocean", "Ginger Island"],
+    "time": "6am – 2pm",
+    "season": ["Summer", "Fall"],
+    "weather": "Any"
+  },
+  {
+    "name": "Chub",
+    "location": ["Mountain Lake", "Forest River"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Dorado",
+    "location": ["Forest River"],
+    "time": "6am – 7pm",
+    "season": ["Summer"],
+    "weather": "Any"
+  },
+  {
+    "name": "Albacore",
+    "location": ["Ocean"],
+    "time": "6am – 11am",
+    "season": ["Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Shad",
+    "location": ["River"],
+    "time": "9am – 2am",
+    "season": ["Spring", "Summer", "Fall"],
+    "weather": "rain"
+  },
+  {
+    "name": "Lingcod",
+    "location": ["River", "Mountain Lake"],
+    "time": "Any",
+    "season": ["Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Halibut",
+    "location": ["Ocean"],
+    "time": "6am – 11am",
+    "season": ["Spring", "Summer", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Lobster",
+    "location": ["Crabpot"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Crayfish",
+    "location": ["Crabpot"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Crab",
+    "location": ["Crabpot"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Cockle",
+    "location": ["Crabpot"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Mussel",
+    "location": ["Crabpot"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Shrimp",
+    "location": ["Crabpot"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Snail",
+    "location": ["Crabpot"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Periwinkle",
+    "location": ["Crabpot"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Oyster",
+    "location": ["Crabpot"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Woodskip",
+    "location": ["Secret Woods", "Forest Farm"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Glacierfish",
+    "location": ["Cindersap Forest"],
+    "time": "Any",
+    "season": ["Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Void Salmon",
+    "location": ["Witch's Swamp"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Slimejack",
+    "location": ["Mutant Bug Lair"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Midnight Squid",
+    "location": ["Night Market"],
+    "time": "5pm - 2am",
+    "season": ["Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Spook Fish",
+    "location": ["Night Market"],
+    "time": "5pm - 2am",
+    "season": ["Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Blobfish",
+    "location": ["Night Market"],
+    "time": "5pm - 2am",
+    "season": ["Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Stingray",
+    "location": ["Pirate Cove"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Lionfish",
+    "location": ["Ginger Island"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Blue Discus",
+    "location": ["Ginger Island"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "River Jelly",
+    "location": ["Crabpot"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Cave Jelly",
+    "location": ["Crabpot"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  }
+]
