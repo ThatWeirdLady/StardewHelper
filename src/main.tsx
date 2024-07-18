@@ -4,7 +4,6 @@ import { Provider } from 'react-redux';
 import { store } from './app/store';
 import './index.css'
 import App from './App'
-console.log("DEMO GIT LAZY");
 
 ReactDOM.render(
   <React.StrictMode>
