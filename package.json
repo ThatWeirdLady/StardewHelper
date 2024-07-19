@@ -1,7 +1,6 @@
 {
   "name": "lets-learn-redux-toolkit",
   "version": "0.0.0",
-  "homepage": "./",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
