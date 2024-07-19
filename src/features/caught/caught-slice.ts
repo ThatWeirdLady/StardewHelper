@@ -21,13 +21,23 @@ const FishSlice = createSlice({
       state.caught[fishName] = true;
     },
     releaseFish(state, action: PayloadAction<string>) {
-      delete state.caught[action.payload];
+      const fishName = action.payload;
+      delete state.caught[fishName];
+    },
+    toggleFish(state, action: PayloadAction<string>) {
+      const fishName = action.payload;
+      if (state.caught[fishName]) {
+        delete state.caught[fishName];
+      } else {
+        state.caught[fishName] = true;
+      }
     },
   },
 });
 
 export const useIsFishCaught = (fish: string) =>
   !!useAppSelector((s) => s.fish.caught[fish]);
+//!! makes every value into boolean
 
-export const { catchFish, releaseFish } = FishSlice.actions;
+export const { catchFish, releaseFish, toggleFish } = FishSlice.actions;
 export default FishSlice.reducer;

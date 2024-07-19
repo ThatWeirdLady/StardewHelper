@@ -9,65 +9,54 @@ import caughtSlice, {
   releaseFish,
   useIsFishCaught,
 } from "./features/caught/caught-slice";
+import { Box, Card, Typography } from "@mui/material";
+import NavBar from "./Components/NavBar";
+import { AllFishes, Fish } from "./fishes";
+import { FishImage } from "./images";
+import FishCard from "./Components/FishCard";
+import { useSeason } from "./features/season/season-slice";
+import { FishSection } from "./Components/FishSection";
 
-// console.log(tigertrout);
-
+function split(
+  fishes: Fish[],
+  condition: (fish: Fish) => boolean
+): [Fish[], Fish[]] {
+  const validFishes = fishes.filter(condition);
+  const inValidFishes = fishes.filter((f: Fish) => !condition(f));
+  return [validFishes, inValidFishes];
+}
 function App() {
-  const count = useAppSelector((state) => state.counter.value);
-  const dispatch = useAppDispatch();
-  const isCaught = useIsFishCaught("Pufferfish");
-  function handleClick() {
-    // increment by 1
-    // dispatch(incremented());
+  const season = useSeason();
 
-    // increment by a fixed amount
-    dispatch(amountAdded(3));
-  }
+  let remaining = AllFishes;
+  let exclusive: Fish[] = [];
 
-  function clickFish() {
-    if (!isCaught) {
-      dispatch(catchFish("Pufferfish"));
-    } else {
-      dispatch(releaseFish("Pufferfish"));
-    }
-    console.log(isCaught);
-  }
+  [exclusive, remaining] = split(remaining, (f: Fish) => {
+    return f.season.length === 1 && f.season.includes(season);
+  });
 
-  console.log("yup it's wokring");
+  let seasonal: Fish[] = [];
+  [seasonal, remaining] = split(remaining, (f: Fish) => {
+    return f.season.includes(season);
+  });
+
+  console.log(exclusive);
+  console.log(seasonal);
+  console.log(remaining);
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button onClick={handleClick}>count is: {count}</button>
-        </p>
-        <p>Hey, Use Redux on Fish</p>
-        <p>
-          <button onClick={clickFish}>IS CAUGHT:{String(isCaught)}</button>
-        </p>
-
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {" | "}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+      <NavBar />
+      <div
+        style={{
+          backgroundColor: "#ffcb7b",
+          padding: 8,
+        }}
+      >
+        <FishSection title="Exclusive" fishes={exclusive} />
+        <FishSection title="Multi-Season" fishes={seasonal} />
+        <FishSection title="Remaining" fishes={remaining} />
+      </div>
     </div>
   );
 }
