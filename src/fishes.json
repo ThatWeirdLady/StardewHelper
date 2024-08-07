@@ -70,20 +70,6 @@
     "weather": "rain"
   },
   {
-    "name": "Sea Jelly",
-    "location": ["Crabpot"],
-    "time": "Any",
-    "season": ["Spring", "Summer", "Fall", "Winter"],
-    "weather": "Any"
-  },
-  {
-    "name": "Goby",
-    "location": ["Cindersap Forest Waterfalls"],
-    "time": "Any",
-    "season": ["Spring", "Summer", "Fall", "Winter"],
-    "weather": "Any"
-  },
-  {
     "name": "Perch",
     "location": ["River", "Mountain Lake", "Forest Pond"],
     "time": "Any",
@@ -508,6 +494,20 @@
   {
     "name": "Cave Jelly",
     "location": ["Crabpot"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Sea Jelly",
+    "location": ["Crabpot"],
+    "time": "Any",
+    "season": ["Spring", "Summer", "Fall", "Winter"],
+    "weather": "Any"
+  },
+  {
+    "name": "Goby",
+    "location": ["Cindersap Forest Waterfalls"],
     "time": "Any",
     "season": ["Spring", "Summer", "Fall", "Winter"],
     "weather": "Any"

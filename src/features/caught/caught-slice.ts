@@ -1,7 +1,6 @@
-//DUCKS pattern?
-
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { useAppSelector } from "../../app/hooks";
+import { Fish } from "../../fishes";
 
 interface FishState {
   caught: Record<string, boolean>;
@@ -38,6 +37,14 @@ const FishSlice = createSlice({
 export const useIsFishCaught = (fish: string) =>
   !!useAppSelector((s) => s.fish.caught[fish]);
 //!! makes every value into boolean
+
+export const useFishesCaught = (fish: Fish[]) =>
+  useAppSelector(
+    (s) =>
+      Object.entries(s.fish.caught).filter((e) =>
+        fish.some((f) => f.name === e[0])
+      ).length === fish.length
+  );
 
 export const { catchFish, releaseFish, toggleFish } = FishSlice.actions;
 export default FishSlice.reducer;

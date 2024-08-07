@@ -17,7 +17,10 @@ import { setSeason, useSeason } from "../features/season/season-slice";
 import { useAppDispatch } from "../app/hooks";
 
 const MyAppBar = styled(AppBar)({
-  backgroundColor: "#853605",
+  backgroundColor: "#9b6f41",
+  border: "solid",
+  borderWidth: "2px",
+  borderColor: "#52352a",
 });
 
 const NavBar = () => {
