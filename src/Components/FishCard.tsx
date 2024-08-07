@@ -24,9 +24,7 @@ const FishCard = (Props: FishCardProps) => {
 
   return (
     <Box sx={{ m: 4 }}>
-      <StardewBox
-      // sx={{ height: "250px", width: "300px", backgroundColor: "#ffcb7b" }}
-      >
+      <StardewBox>
         <Box id={`${fish.name}-box`} sx={{ p: 2 }}>
           <Box
             id={`${fish.name}-header`}
@@ -40,16 +38,17 @@ const FishCard = (Props: FishCardProps) => {
               onClick={onCatch}
               style={{ height: 32, width: 32 }}
               src={Iridum_Rod}
-            ></img>
+              alt={`catch ${fish.name}`}
+            />
             <Box id={`${fish.name}-icon`}>
               <Typography>{fish.name}</Typography>
-              <img src={FishImage[fish.name]}></img>
+              <img src={FishImage[fish.name]} />
             </Box>
           </Box>
-          <Typography>Location: {fish.location.join(" - ")} </Typography>
-          <Typography>Time: {fish.time} </Typography>
-          <Typography>Season: {fish.season.join(" - ")} </Typography>
-          <Typography>Weather: {fish.weather} </Typography>
+          <Typography>Location: {fish.location.join(" - ")}</Typography>
+          <Typography>Time: {fish.time}</Typography>
+          <Typography>Season: {fish.season.join(" - ")}</Typography>
+          <Typography>Weather: {fish.weather}</Typography>
         </Box>
       </StardewBox>
     </Box>
