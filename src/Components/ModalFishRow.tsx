@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
 import { FishIcon } from "./FishIcon";
-import { AllFishes, Fish } from "../fishes";
+import { Fish } from "../fishes";
 
 const rows: Fish[][] = [];
 interface ModalFishRowProps {

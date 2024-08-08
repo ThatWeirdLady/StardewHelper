@@ -1,7 +1,7 @@
 import React from "react";
 import { Modal } from "@mui/material";
 import { BasicModal } from "./BasicModal";
-import { act, fireEvent, render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import { makeStore } from "../app/store";
 import { Provider } from "react-redux";
 
@@ -25,13 +25,13 @@ test("Click Collection Button Opens Modal", async () => {
   );
   const collButton = screen.getByText(/Collection/i);
   fireEvent.click(collButton);
-  expect(screen.queryAllByAltText(/Pufferfish icon/i)).toBeTruthy();
+  expect(screen.queryAllByAltText(/Pufferfish icon/i).length).toBe(1);
 });
 
 test("Modal Closes When Collection Button is clicked", async () => {
   const store = makeStore();
 
-  render(
+  const r = render(
     <Provider store={store}>
       <BasicModal />
     </Provider>
@@ -40,5 +40,6 @@ test("Modal Closes When Collection Button is clicked", async () => {
   fireEvent.dblClick(collButton);
 
   console.log("Collection Button Clicked Closed");
+  console.log(screen.queryAllByAltText(/Pufferfish icon/i).length);
   expect(screen.queryAllByAltText(/Pufferfish icon/i).length).toBe(0);
 });

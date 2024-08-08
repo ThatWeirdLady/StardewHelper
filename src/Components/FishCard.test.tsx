@@ -1,9 +1,8 @@
 import React from "react";
-
 import { fireEvent, render, screen } from "@testing-library/react";
 import FishCard from "./FishCard";
 import { Provider } from "react-redux";
-import { makeStore, store } from "../app/store";
+import { makeStore } from "../app/store";
 import { toggleFish } from "../features/caught/caught-slice";
 
 const dummyFish = {

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./App.css";
-import NavBar from "./Components/NavBar";
-import { AllFishes, Fish } from "./fishes";
+import { NavBar } from "./Components/NavBar";
+import { Fish, AllFishes } from "./fishes";
 import { useSeason } from "./features/season/season-slice";
 import { FishSection } from "./Components/FishSection";
 
-function split(
+export function split(
   fishes: Fish[],
   condition: (fish: Fish) => boolean
 ): [Fish[], Fish[]] {
@@ -13,20 +13,39 @@ function split(
   const inValidFishes = fishes.filter((f: Fish) => !condition(f));
   return [validFishes, inValidFishes];
 }
+
+export function exclusiveTo(season: string) {
+  function match(f: Fish) {
+    return f.season.length === 1 && f.season.includes(season);
+  }
+
+  return match;
+}
+
+export function seasonalTo(season: string) {
+  function match(f: Fish) {
+    return f.season.includes(season);
+  }
+
+  return match;
+}
+
+export function inCrabpot(fish: Fish) {
+  return fish.location.includes("Crabpot");
+}
+
 function App() {
   const season = useSeason();
 
   let remaining = AllFishes;
-  let exclusive: Fish[] = [];
 
-  [exclusive, remaining] = split(remaining, (f: Fish) => {
-    return f.season.length === 1 && f.season.includes(season);
-  });
+  let crabpot: Fish[] = [];
+  [crabpot, remaining] = split(remaining, inCrabpot);
+  let exclusive: Fish[] = [];
+  [exclusive, remaining] = split(remaining, exclusiveTo(season));
 
   let seasonal: Fish[] = [];
-  [seasonal, remaining] = split(remaining, (f: Fish) => {
-    return f.season.includes(season);
-  });
+  [seasonal, remaining] = split(remaining, seasonalTo(season));
 
   return (
     <div className="App">
@@ -39,7 +58,8 @@ function App() {
       >
         <FishSection title="Exclusive" fishes={exclusive} />
         <FishSection title="Multi-Season" fishes={seasonal} />
-        <FishSection title="Remaining" fishes={remaining} />
+        <FishSection title="Crabpot" fishes={crabpot} />
+        <FishSection title="Unavailable" fishes={remaining} />
       </div>
     </div>
   );

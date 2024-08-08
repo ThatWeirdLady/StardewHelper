@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 import {
   AppBar,
   Box,
-  Button,
   FormControl,
   InputLabel,
   MenuItem,
@@ -15,6 +14,7 @@ import React from "react";
 import { BasicModal } from "./BasicModal";
 import { setSeason, useSeason } from "../features/season/season-slice";
 import { useAppDispatch } from "../app/hooks";
+import { InstructionModal } from "./InstructionModal";
 
 const MyAppBar = styled(AppBar)({
   backgroundColor: "#9b6f41",
@@ -30,6 +30,7 @@ export const NavBar = () => {
   const handleChange = (event: SelectChangeEvent) => {
     dispatch(setSeason(event.target.value));
   };
+
   return (
     <>
       <MyAppBar position="static">
@@ -64,6 +65,7 @@ export const NavBar = () => {
               </Select>
             </FormControl>
             <BasicModal />
+            <InstructionModal />
           </Box>
         </Toolbar>
       </MyAppBar>

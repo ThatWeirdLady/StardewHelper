@@ -1,6 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { useAppSelector } from "../../app/hooks";
 import { Fish } from "../../fishes";
+import { RootState } from "../../app/store";
 
 interface FishState {
   caught: Record<string, boolean>;
@@ -34,17 +35,29 @@ const FishSlice = createSlice({
   },
 });
 
-export const useIsFishCaught = (fish: string) =>
-  !!useAppSelector((s) => s.fish.caught[fish]);
-//!! makes every value into boolean
+export function useIsFishCaught(fish: string) {
+  function selectIsCaught(s: RootState) {
+    return s.fish.caught[fish];
+  }
 
-export const useFishesCaught = (fish: Fish[]) =>
-  useAppSelector(
-    (s) =>
-      Object.entries(s.fish.caught).filter((e) =>
-        fish.some((f) => f.name === e[0])
-      ).length === fish.length
-  );
+  const isCaught = useAppSelector(selectIsCaught);
+  //!! makes every value into boolean
+  return !!isCaught;
+}
+
+export function useFishesCaught(fish: Fish[]) {
+  function fishIncluded(entry: [string, boolean]) {
+    return fish.some((f) => f.name === entry[0]);
+  }
+
+  function selector(s: RootState) {
+    const entries = Object.entries(s.fish.caught);
+    const caughtList = entries.filter(fishIncluded);
+    return caughtList.length === fish.length;
+  }
+
+  return useAppSelector(selector);
+}
 
 export const { catchFish, releaseFish, toggleFish } = FishSlice.actions;
 export default FishSlice.reducer;
