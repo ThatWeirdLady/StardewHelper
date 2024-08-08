@@ -26,6 +26,7 @@ export const FishIcon = (prop: FishIconProps) => {
         onClick={onClick}
         style={{ filter: filter }}
         src={FishImage[fish.name]}
+        alt={`${fish.name} icon`}
       ></img>
     </>
   );

@@ -23,7 +23,7 @@ const MyAppBar = styled(AppBar)({
   borderColor: "#52352a",
 });
 
-const NavBar = () => {
+export const NavBar = () => {
   const dispatch = useAppDispatch();
   const season = useSeason();
 
@@ -70,5 +70,3 @@ const NavBar = () => {
     </>
   );
 };
-
-export default NavBar;
